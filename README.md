@@ -1,6 +1,6 @@
-# {{PROJECT_NAME}}
+# intro
 
-{{PROJECT_DESCRIPTION}}
+
 
 ## Contributing
 
