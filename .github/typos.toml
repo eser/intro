@@ -8,3 +8,5 @@ dppx = "dppx"
 
 [default.extend-identifiers]
 smoothstep = "smoothstep"
+iy = "iy"
+ix = "ix"

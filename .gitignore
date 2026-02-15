@@ -24,6 +24,7 @@ Thumbs.db
 *.dylib
 
 # local API keys and secrets
+.env
 .env.local
 .env.*.local
 
@@ -39,3 +40,7 @@ dist/
 
 # TanStack Router (auto-generated)
 src/routeTree.gen.ts
+
+# Prisma
+prisma/*.db
+src/generated/

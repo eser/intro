@@ -12,7 +12,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    nitro(),
+    nitro({
+      scanDirs: ["server"],
+    }),
     tsConfigPaths({
       projects: ["./tsconfig.json"],
     }),

@@ -33,9 +33,12 @@
   },
   "include": [
     "src/**/*",
-    "vite.config.ts"
+    "server/**/*",
+    "vite.config.ts",
+    "prisma.config.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/generated"
   ]
 }
