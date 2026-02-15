@@ -117,12 +117,13 @@ export class Engine {
       }
     }
 
-    // Update scroller speed
+    // Update scroller
     const overlay = config.overlays.find(
       (o) => o.type === "tickertext" && o.enabled,
     );
-    if (this.scroller && overlay?.speed != null) {
-      this.scroller.setSpeed(overlay.speed);
+    if (this.scroller && overlay) {
+      if (overlay.speed != null) this.scroller.setSpeed(overlay.speed);
+      if (overlay.content != null) this.scroller.setMessage(overlay.content);
     }
   }
 

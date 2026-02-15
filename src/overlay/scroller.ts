@@ -7,6 +7,8 @@ export class TextScroller {
   private scrollerSpeed: number;
   private fontSize = 0;
   private ready = false;
+  private lastViewWidth = 0;
+  private lastViewHeight = 0;
 
   constructor(message: string, speed: number) {
     this.message = message;
@@ -18,6 +20,8 @@ export class TextScroller {
   }
 
   init(viewWidth: number, viewHeight: number): void {
+    this.lastViewWidth = viewWidth;
+    this.lastViewHeight = viewHeight;
     this.fontSize = Math.max(16, (viewHeight * 0.06) | 0);
     const font = `bold ${this.fontSize}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
 
@@ -68,6 +72,14 @@ export class TextScroller {
 
   setSpeed(speed: number): void {
     this.scrollerSpeed = speed;
+  }
+
+  setMessage(message: string): void {
+    if (message === this.message) return;
+    this.message = message;
+    if (this.ready) {
+      this.init(this.lastViewWidth, this.lastViewHeight);
+    }
   }
 
   update(delta: number): void {
