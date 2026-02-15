@@ -1,0 +1,53 @@
+{
+  "general": {
+    "effectDuration": 10000,
+    "transitionDuration": 2000,
+    "resolutionScale": 0.5
+  },
+  "overlays": [
+    {
+      "type": "tickertext",
+      "enabled": true,
+      "content": "GREETINGS TO ALL DEMOSCENE LOVERS AROUND THE WORLD ... THIS INTRO WAS CRAFTED WITH LOVE FOR THE ART OF REALTIME GRAPHICS ... REMEMBER THE ROOTS ... KEEP THE SCENE ALIVE ...",
+      "speed": 120
+    }
+  ],
+  "effects": [
+    { "type": "plasma", "enabled": true, "speed": 1.0 },
+    {
+      "type": "starfield",
+      "enabled": true,
+      "starCount": 2000,
+      "maxDepth": 120,
+      "speed": 1.6
+    },
+    { "type": "fire", "enabled": true, "intensity": 0.6 },
+    {
+      "type": "tunnel",
+      "enabled": true,
+      "rotationSpeed": 0.8,
+      "zoomSpeed": 1.5
+    },
+    { "type": "metaballs", "enabled": true, "ballCount": 6, "speed": 1.0 },
+    {
+      "type": "rotozoom",
+      "enabled": true,
+      "rotationSpeed": 0.4,
+      "scrollSpeed": 1.0
+    },
+    {
+      "type": "voxel-landscape",
+      "enabled": true,
+      "cameraSpeed": 1.0,
+      "viewDistance": 400
+    },
+    { "type": "wireframe-cube", "enabled": true, "rotationSpeed": 1.0 },
+    {
+      "type": "particles",
+      "enabled": true,
+      "maxParticles": 2500,
+      "gravity": 90
+    },
+    { "type": "matrix-rain", "enabled": true, "speed": 1.0 }
+  ]
+}

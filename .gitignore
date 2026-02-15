@@ -26,3 +26,16 @@ Thumbs.db
 # local API keys and secrets
 .env.local
 .env.*.local
+
+# Node.js
+node_modules/
+
+# Vite
+dist/
+*.local
+
+# Nitro
+.output/
+
+# TanStack Router (auto-generated)
+src/routeTree.gen.ts
